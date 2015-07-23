@@ -1,0 +1,39 @@
+* {
+	font-family: @base-ff;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	min-width: 960px;
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+header .no-padding{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.to-right{
+	float: right;
+}
+
+.to-left{
+	float: left;
+}

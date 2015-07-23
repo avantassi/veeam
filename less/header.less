@@ -1,0 +1,82 @@
+.page-header{
+	background-color: #54b948;
+	overflow: hidden;
+	border-bottom: 5px solid #54b948;
+}
+
+
+.logo-img{
+	margin: 20px 0;
+}
+
+.logo-app-text{
+	margin-top: 10px;
+	max-width: 150px;
+	color: #fff;
+	font-family: @logo-ff;
+	font-size: 19px;
+	text-align: center;
+}
+
+.logo-text{
+	line-height: 20px;
+
+	&--small{
+	font-size: 14px;
+	}
+}
+
+
+// header
+.main-logo,
+.logo-app {
+	position: relative;
+	height: 80px;
+}
+.main-logo {
+	float: left;
+	z-index: 8;
+	width: 83%;
+	background-color: #fff;
+}
+.logo-app {
+	float: right;
+	z-index: 9;
+	width: 16%;
+	background-color: @base-color;
+}
+.main-logo:after,
+.logo-app:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 0;
+	height: 0;
+}
+.main-logo:after {
+	right: 0;
+	border-left: 100px solid #fff;
+	border-bottom: 200px solid #54b948;
+}
+.logo-app:before {
+	left: -100px;
+	border-right: 100px solid @base-color;
+	border-top: 200px solid rgba(0, 0, 0, 0);
+}
+.logo-app:after, .main-logo:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 2000px;
+	height: 100%;
+}
+.logo-app:after{
+	left: 0;
+	z-index: -1;
+	background-color: @base-color;
+}
+.main-logo:before{
+	right: 0;
+	z-index: -1;
+	background-color: #fff;
+}
